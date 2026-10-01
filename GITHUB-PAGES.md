@@ -1,6 +1,6 @@
 # GitHub Pages · Einsatzmittel-Finder V0.1
 
-Das öffentliche Repository [maxlang15-bit/Einsatzmittelfinder](https://github.com/maxlang15-bit/Einsatzmittelfinder) enthält die geprüften Projektdateien. Der erste GitHub-Actions-Build mit Tests war erfolgreich. **GitHub Actions** ist als Pages-Quelle aktiviert; der nächste Push löst den erfolgreichen Deploy aus.
+Das öffentliche Repository [maxlang15-bit/Einsatzmittelfinder](https://github.com/maxlang15-bit/Einsatzmittelfinder) enthält die geprüften Projektdateien. Der GitHub-Actions-Lauf für Build, Tests und Deployment war erfolgreich. Die V0.1-Demo ist live: [maxlang15-bit.github.io/Einsatzmittelfinder](https://maxlang15-bit.github.io/Einsatzmittelfinder/).
 
 ## Vor der Demo-Veröffentlichung
 
@@ -10,11 +10,11 @@ GitHub Pages wird über ein globales Netz ausgeliefert und bietet hier keinen fe
 
 ## GitHub vorbereiten und veröffentlichen
 
-Der Quellcode wurde mit GitHub Desktop hochgeladen. Zum Abschließen der Veröffentlichung:
+Der Quellcode wurde mit GitHub Desktop hochgeladen und **GitHub Actions** wurde unter **Settings → Pages** als Veröffentlichungsquelle gewählt. Weitere Commits auf `main` lösen automatisch Tests, Produktionsbuild und Deployment aus.
 
-1. In **Settings → Pages** als Build- und Deployment-Quelle **GitHub Actions** wählen.
-2. In **Actions** den automatischen Lauf abwarten. Der Build und die Tests laufen im Workflow `.github/workflows/pages.yml`; danach wird `dist` veröffentlicht.
-3. Die Demo wird unter https://maxlang15-bit.github.io/Einsatzmittelfinder/ erreichbar sein. Anschließend in einem privaten Browserfenster und auf dem iPad testen.
+1. Änderungen in GitHub Desktop committen und auf `main` pushen.
+2. In **Actions** prüfen, dass Tests, Build und Pages-Deployment erfolgreich abgeschlossen sind.
+3. Die Demo ist unter https://maxlang15-bit.github.io/Einsatzmittelfinder/ erreichbar. Auf dem iPad in Safari über „Teilen → Zum Home-Bildschirm“ hinzufügen; die Offline-Nutzung benötigt einen vollständigen ersten Seitenaufruf.
 
 Bei Projektseiten setzt der Workflow Vites Basis-URL automatisch auf `/<repository-name>/`. Für ein persönliches Repository `<account>.github.io` verwendet er `/`. PWA-Manifest, Icons und Service Worker nutzen dieselbe Basis, sodass die Unterpfad-Seite und Offline-Dateien korrekt gefunden werden.
 
