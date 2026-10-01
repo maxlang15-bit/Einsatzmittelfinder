@@ -1,6 +1,6 @@
 # GitHub Pages · Einsatzmittel-Finder V0.1
 
-Die Projektdateien sind für GitHub Pages vorbereitet. Noch wurde kein GitHub-Repository angelegt, kein Quellcode hochgeladen und keine Seite veröffentlicht.
+Das öffentliche Repository [maxlang15-bit/Einsatzmittelfinder](https://github.com/maxlang15-bit/Einsatzmittelfinder) enthält die geprüften Projektdateien. Der erste GitHub-Actions-Build mit Tests war erfolgreich. **GitHub Actions** ist als Pages-Quelle aktiviert; der nächste Push löst den erfolgreichen Deploy aus.
 
 ## Vor der Demo-Veröffentlichung
 
@@ -10,13 +10,11 @@ GitHub Pages wird über ein globales Netz ausgeliefert und bietet hier keinen fe
 
 ## GitHub vorbereiten und veröffentlichen
 
-Diese Schritte starten den externen Upload und die Veröffentlichung. Sie wurden noch nicht ausgeführt.
+Der Quellcode wurde mit GitHub Desktop hochgeladen. Zum Abschließen der Veröffentlichung:
 
-1. In GitHub ein neues Repository namens `Einsatzmittel-Finder` anlegen. Wenn der GitHub-Free-Tarif genutzt wird, das Repository öffentlich anlegen. Bei einem Tarif mit Pages aus privaten Repositories kann das Quell-Repository privat sein, die Website bleibt trotzdem öffentlich. Keine Lizenz-, Template- oder zusätzlichen Beispieldateien automatisch generieren lassen.
-2. Im Projektordner prüfen, dass `node_modules/`, `.runtime/`, `dist/`, `Vorschau.png`, `Start.command`, `.env`-Dateien und Zugangsdaten nicht zum Commit vorgemerkt sind. Die bestehende `.gitignore` schließt lokale Laufzeiten, Build-Ausgaben, Vorschau und Geheimnisdateien aus.
-3. Die von GitHub angezeigten Befehle zum Commit und Push des Projekts auf den Branch `main` ausführen. Der Projektordner ist aktuell noch kein Git-Repository; diese Einrichtung und der Upload stehen also noch aus.
-4. In **Settings → Pages** als Build- und Deployment-Quelle **GitHub Actions** wählen. Der Workflow `.github/workflows/pages.yml` testet die App, erstellt den Build und veröffentlicht den Ordner `dist`.
-5. In **Actions** den erfolgreichen Workflow abwarten. Danach erscheint der öffentliche Pages-Link unter **Settings → Pages** bzw. als URL des `github-pages`-Deployments. Im privaten Browserfenster und auf dem iPad testen.
+1. In **Settings → Pages** als Build- und Deployment-Quelle **GitHub Actions** wählen.
+2. In **Actions** den automatischen Lauf abwarten. Der Build und die Tests laufen im Workflow `.github/workflows/pages.yml`; danach wird `dist` veröffentlicht.
+3. Die Demo wird unter https://maxlang15-bit.github.io/Einsatzmittelfinder/ erreichbar sein. Anschließend in einem privaten Browserfenster und auf dem iPad testen.
 
 Bei Projektseiten setzt der Workflow Vites Basis-URL automatisch auf `/<repository-name>/`. Für ein persönliches Repository `<account>.github.io` verwendet er `/`. PWA-Manifest, Icons und Service Worker nutzen dieselbe Basis, sodass die Unterpfad-Seite und Offline-Dateien korrekt gefunden werden.
 

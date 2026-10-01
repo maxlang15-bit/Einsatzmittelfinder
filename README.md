@@ -34,7 +34,7 @@ Die Produktionsvorschau ist üblicherweise unter http://127.0.0.1:4173 erreichba
 
 ## iPad und Installation
 
-Auf einem iPad benötigt eine installierbare PWA eine vom Gerät erreichbare HTTPS-Adresse; die Loopback-Adresse des Mac ist dort nicht erreichbar. Für V0.1 wurde bewusst nichts veröffentlicht und kein LAN-Server geöffnet. Auf dem später bereitgestellten HTTPS-Host in Safari über „Teilen → Zum Home-Bildschirm“ hinzufügen. Offline erst nach vollständigem initialem Laden nutzen. Die Testabnahme auf einem echten iPad steht aus.
+Auf einem iPad benötigt eine installierbare PWA eine vom Gerät erreichbare HTTPS-Adresse; die Loopback-Adresse des Mac ist dort nicht erreichbar. Sobald GitHub Pages aktiviert ist, kann die Demo auf dem iPad in Safari über „Teilen → Zum Home-Bildschirm“ hinzugefügt werden. Offline erst nach vollständigem initialem Laden nutzen. Die Testabnahme auf einem echten iPad steht aus.
 
 ## Aufbau und spätere Erweiterung
 
@@ -59,4 +59,4 @@ Der übermittelte Auftrag endet bei „Verwaltung – Dort:“. Der Verwaltungsu
 
 ## Präsentationsversion mit GitHub Pages
 
-Der Projektseiten-Build und ein GitHub-Actions-Workflow sind vorbereitet. Repository, Upload und Veröffentlichung sind noch nicht eingerichtet. Alle Daten bleiben fiktiv. GitHub Pages stellt Websites öffentlich über ein globales Netz bereit und ist kein festgelegtes Deutschland-Hosting. Details und nächste Schritte: [GITHUB-PAGES.md](GITHUB-PAGES.md). Die finale Anwendung braucht eine separate Hosting- und Datenschutzprüfung.
+Das öffentliche Repository ist [maxlang15-bit/Einsatzmittelfinder](https://github.com/maxlang15-bit/Einsatzmittelfinder). Der erste GitHub-Actions-Build und die Tests waren erfolgreich, und Pages ist für GitHub Actions aktiviert. Der nächste Workflow-Lauf veröffentlicht die Demo unter https://maxlang15-bit.github.io/Einsatzmittelfinder/. Alle Daten bleiben fiktiv. GitHub Pages stellt Websites öffentlich über ein globales Netz bereit und ist kein festgelegtes Deutschland-Hosting. Details: [GITHUB-PAGES.md](GITHUB-PAGES.md). Die finale Anwendung braucht eine separate Hosting- und Datenschutzprüfung.
