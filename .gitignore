@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.DS_Store
+*.tsbuildinfo
+.sites-runtime/
+.runtime/
+
+# Environment files and local credentials (never commit)
+.env
+.env.*
+*.env
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Hosting metadata and local machine/tool files
+.vercel/
+.codex/
+.agents/
+.idea/
+.vscode/
+*.log
+coverage/
+Start.command
+Vorschau.png
